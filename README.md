@@ -1,8 +1,5 @@
 # ProjetoUninove4Semestre
 
-
-
-
 |            NOME                       |             RA              |
 | Beatriz Pereira Alencar               |          420105708          |
 | Daniel Crysthi Scaldaferri            |          420104144          |
