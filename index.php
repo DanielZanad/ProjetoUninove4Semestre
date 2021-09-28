@@ -2,7 +2,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php include_once './header.php'; ?>
-    <?php include_once './nav.php'; ?>
+    <?php include_once './src/header.php'; ?>
+    <?php include_once './src/nav.php'; ?>
 </body>
 </html>

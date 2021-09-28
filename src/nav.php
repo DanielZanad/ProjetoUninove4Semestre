@@ -1,6 +1,6 @@
 <nav>
-    <select name="Categorias" id="categoria">
-        <option value="">teste</option>
+    <select name="categoria" id="categoria">
+        <option value="">Categoria</option>
         <option value="">teste</option>
         <option value="">teste</option>
     </select>
