@@ -24,6 +24,23 @@ img#logo {
     left: 74px;
     top: 9px;
 }
+
+select#todosite{
+    position: absolute;
+    width: 109px;
+    height: 16px;
+    left: 447px;
+    top: 54px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    
+    color: #7AD3F0;
+}
+
 input#search-box{
     display: inline-block;
     position: absolute;

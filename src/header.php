@@ -6,7 +6,8 @@
         <option value="">Livros</option>
         <option value="">Jogos</option>
         <option value="">Brinquedos</option>
-        <option value="">Filmes e Series</option>
+        <option value="">Filmes</option>
+        <option value="">Series</option>
         </select>
         <p>Olá, Seja Bem vindo!</p>
         <div class="login">
