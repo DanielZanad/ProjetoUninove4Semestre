@@ -1,6 +1,9 @@
-*{
-    margin: 0px;
-    padding: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+*{ 
+    margin: auto;
+    padding: 0%;
 }
 
 
@@ -27,16 +30,14 @@ img#logo {
 
 select#todosite{
     position: absolute;
-    width: 109px;
-    height: 16px;
+    width: 123px;
+    height: 50px;
     left: 447px;
-    top: 54px;
-    
+    top: 35px;
     font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: 1px solid #ffffff;
     
     color: #7AD3F0;
 }
@@ -127,6 +128,40 @@ select#categoria{
 
 
 body {
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+img#anuncioimagem{
+
+   position:absolute;
+   right: 30px;
+
+
+}
+
+div#anuncio > h2{
+     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: inline;
+
+}
+
+div#anuncio{
+    border-radius: 25px;
+
+    background-color: #C0CCDA;
+    top: 250px;
+    position: absolute;
+    left: 35px;
+    margin-top: 5px;
+    height: 208px;
+    margin: auto;
+    width: 95%;
+    padding: 10px;
 
 }
 

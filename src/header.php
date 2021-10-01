@@ -14,7 +14,7 @@
             <img src="./img/carbon_user-filled.png" />
             <a href="">Entre</a>
             <p>Ou</p>
-            <a href="">Cadastrase-se</a>
+            <a href="">Cadastre-se</a>
             <a href="">
                 <img src="./img/clarity_shopping-cart-solid.png" id="carrinho" />
             </a>
