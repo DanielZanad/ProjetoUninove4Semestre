@@ -12,12 +12,27 @@
 <body>
     <?php include_once './src/header.php'; ?>
     <?php include_once './src/nav.php'; ?>
-
     <div id="anuncio"> 
         <h2>
             Livros com até 20% de Desconto
         </h2>
         <img id="anuncioimagem" src="./img/anuncio.png"> 
     </div>
+
+    <div id="procura">
+        <h2>
+            Livros e mais livros
+        </h2>
+        <p>
+            Aqui você encontra as melhores opções em Livros, Games, Filmes, Músicas e Eletrônicos além de eventos gratuitos e as melhores ofertas. Confira!
+        </p>
+        <button type="button">Mais vendidos</button>
+        <button class="btn">Destaques</button>
+        <button class="btn">Super ofertas
+    </div>
+    
+
+
+
 </body>
 </html>

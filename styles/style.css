@@ -25,7 +25,7 @@ div#search-box{
     display: inline;
     position: absolute;
     width: 550px;
-    left: 480px;
+    left: 440px;
     top: 39px;
     height: 50px;
     border: 2px solid #7AD3F0;
@@ -141,6 +141,12 @@ div#anuncio > h2{
     font-family: 'Roboto', sans-serif;
     color: white;
     display: inline;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 47px;
+    position: absolute;
+    left: 100px;
 }
 div#anuncio{
     border-radius: 25px;
@@ -153,6 +159,48 @@ div#anuncio{
     margin: auto;
     width: 95%;
     padding: 10px;
+}
+div#procura{
+    position: absolute;
+    top: 510px;
+    left: 40px;
+}
+div#procura > h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+}
+div#procura > p{
+    margin-top: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.1em;
+    line-height: 18px;
+}
+div#procura > button{
+    width: 185px;
+    margin-top: 30px;
+    padding: 18px;
+    border: 2px solid #66b5cf;
+    margin-right: 20px;
+    border-radius: 5px;
+    background-color: white;
+    color: #66b5cf;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.1em;
+    line-height: 20px;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+div#procura > button:focus{
+    background-color: #66b5cf;
+    color: white;
+    
 }
 
 main{
