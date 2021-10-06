@@ -14,10 +14,10 @@
     <?php include_once './src/nav.php'; ?>
 
     <div id="anuncio"> 
-        <h2>Livros com até 20%
-         de Desconto
+        <h2>
+            Livros com até 20% de Desconto
         </h2>
-    <img id="anuncioimagem" src="./img/anuncio.png"> 
+        <img id="anuncioimagem" src="./img/anuncio.png"> 
     </div>
 </body>
 </html>

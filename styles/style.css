@@ -8,75 +8,78 @@
 
 
 header{
-    min-height: 120px;
-    text-align: center;
+    min-height: 110px;
     margin-top: 30px;
 }
-header > p{
-    text-align: right;
-    margin-right: 65px;
-    font-size: 1.1em;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
+
+
 img#logo {
     position: absolute;
-    display: inline-block;
+    display: inline;
     width: 291px;
     height: 103px;
     left: 74px;
     top: 9px;
 }
-
-select#todosite{
+div#search-box{
+    display: inline;
     position: absolute;
-    width: 123px;
+    width: 550px;
+    left: 480px;
+    top: 39px;
     height: 50px;
-    left: 447px;
-    top: 35px;
+    border: 2px solid #7AD3F0;
+    padding-bottom: -10px;
+}
+select#todosite{
+    width: 123px;
+    height: 45px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
     font-weight: bold;
     border: 1px solid #ffffff;
-    
     color: #7AD3F0;
 }
-
 input#search-box{
-    display: inline-block;
-    position: absolute;
-    width: 606px;
-    height: 64px;
-    left: 434px;
-    top: 28px;
+    width: 70%;
+    height: 70%;
     font-size: 20px;
-    line-height: 3;
-    border: 3px solid #7AD3F0;
-    box-sizing: border-box;
-    border-top-style: solid;
-    border-top-width: 7px;
-    border-left-width: 6px;
-    border-left-style: solid;
-    border-bottom-width: 6px;
-    border-bottom-style: solid;
-    border-right-width: 6px;
-    border-right-style: solid;
-    
-    
+    line-height: 1;
+    border: 3px rgba(184, 17, 17, 0); 
+    padding-bottom: 5px;
+    padding-left: 10px;
 }
-div.login > p{
-    display: inline;
-    font-size: 1.1em;
-    font-family: Arial, Helvetica, sans-serif;
-}
-div.login{
+header > p{
+    position: absolute;
+    right: 127px;
     text-align: right;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: normal;
 }
-div.login > a{
+
+
+div#login{
+    display: inline;
+    position: absolute;
+    right: 120px;
+    top: 45px;
+}
+div#login > a{
     margin-bottom: 20px;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
+}
+div#login > p{
+    display: inline;
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img#carrinho{
+    position: absolute;
+    right: 30px;
+    top: 40px;
 }
 
 
@@ -96,8 +99,6 @@ div#links > a{
     border-radius: 5px;
     transition-duration: 0.3s;
     margin-right: 18px;
-
-    
 }
 div#links > a:hover{
     background-color: #66b5cf;
@@ -122,47 +123,36 @@ select#categoria{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
     font-weight: bold;
-    
 }
 
 
 
 body {
-
     margin: 0px;
     padding: 0px;
-
 }
-
 img#anuncioimagem{
-
    position:absolute;
    right: 30px;
-
-
+   height: 90%;
 }
-
 div#anuncio > h2{
-     text-align: center;
+    text-align: center;
     font-family: 'Roboto', sans-serif;
     color: white;
     display: inline;
-
 }
-
 div#anuncio{
     border-radius: 25px;
-
     background-color: #C0CCDA;
     top: 250px;
     position: absolute;
     left: 35px;
     margin-top: 5px;
-    height: 208px;
+    height: 195px;
     margin: auto;
     width: 95%;
     padding: 10px;
-
 }
 
 main{
