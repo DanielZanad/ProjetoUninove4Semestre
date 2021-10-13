@@ -4,13 +4,19 @@ namespace app\model;
 
 class UsuarioModel{
     public function create(Usuario $usuario){
-
-        $sql = 'SELECT * FROM usuario WHERE id = ?';
+        $ok = true;
+        $sql = 'SELECT email FROM usuario';
         $stmt = Conexao::getConn()->prepare($sql);
-        $stmt->bindValue(1, $usuario->getEmail()); 
         $stmt->execute();
-        if(!($stmt->rowCount()>0)){
-            // Criando query para INSERIR no banco de dados
+        $result = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+        foreach($result as $r){
+            if ($r["email"] == $usuario->getEmail()){
+                $ok = false;
+            }else{
+                $ok = true;
+            }
+        }
+        if($ok){
             $sql = 'INSERT INTO usuario (nome, email,
             senha, cel, dataNas, genero) VALUES (?,?,?,?,?,?)';
 
@@ -24,6 +30,7 @@ class UsuarioModel{
             $stmt->bindValue(6, $usuario->getGenero());
 
             $stmt->execute();
+            return json_encode(["status"=>"true", "sucesso"=>"Cadastro realizado com sucesso"]);
         }else{
             return json_encode(["status"=>"false","erro"=>"EMAIl ja existe no banco de dados"]);
         } 
