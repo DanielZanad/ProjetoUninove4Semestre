@@ -30,9 +30,9 @@
         <button class="btn">Destaques</button>
         <button class="btn">Super ofertas
     </div>
-    
 
+    <div>
 
-
+    </div>
 </body>
 </html>
