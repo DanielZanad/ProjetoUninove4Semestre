@@ -38,7 +38,7 @@
         <button class="sinopse">Sinopse</button>
         <a href="" class="adicionar" style="text-decoration: none;">
             Adicionar
-            <img src="./img/clarity_shopping-cart-solid.png"/>
+            <img src="./img/shopping_cart.ico"/>
         </a>
     </div>
     <div id="quadradao2">
@@ -48,7 +48,7 @@
         <button class="sinopse">Sinopse</button>
         <a href="" class="adicionar" style="text-decoration: none;">
             Adicionar
-            <img src="./img/clarity_shopping-cart-solid.png"/>
+            <img src="./img/shopping_cart.ico"/>
         </a>
     </div>
     <div id="quadradao3">
@@ -58,7 +58,7 @@
         <button class="sinopse">Sinopse</button>
         <a href="" class="adicionar" style="text-decoration: none;">
             Adicionar
-            <img src="./img/clarity_shopping-cart-solid.png"/>
+            <img src="./img/shopping_cart.ico"/>
         </a>
     </div>
     <div id="quadradao4">
@@ -68,7 +68,7 @@
         <button class="sinopse">Sinopse</button>
         <a href="" class="adicionar" style="text-decoration: none;">
             Adicionar
-            <img src="./img/clarity_shopping-cart-solid.png"/>
+            <img src="./img/shopping_cart.ico"/>
         </a>
     </div>
     <div id="quadradao5">
@@ -78,7 +78,7 @@
         <button class="sinopse">Sinopse</button>
         <a href="" class="adicionar" style="text-decoration: none;">
             Adicionar
-            <img src="./img/clarity_shopping-cart-solid.png"/>
+            <img src="./img/shopping_cart.ico"/>
         </a>
     </div>
 
