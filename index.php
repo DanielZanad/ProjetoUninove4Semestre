@@ -32,7 +32,62 @@
     </div>
 
     <div id="quadradao1">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum alias quos sed veritatis, beatae natus doloribus. Optio inventore id, incidunt dicta at asperiores omnis hic laborum facilis, cum ipsum similique.</p>
+        <img src="./img/the_last_of_us.png" alt="" class="imagens">
+        <p id="titulo">Jogo The Last of Us 2</p>
+        <p id="preco">R$ 200.00</p>
+        <button class="sinopse">Sinopse</button>
+        <a href="" class="adicionar" style="text-decoration: none;">
+            Adicionar
+            <img src="./img/clarity_shopping-cart-solid.png"/>
+        </a>
     </div>
+    <div id="quadradao2">
+        <img src="./img/resident_evil_2.png" alt="" class="imagens">
+        <p id="titulo">Jogo Resident Evil 2</p>
+        <p id="preco">R$ 200.00</p>
+        <button class="sinopse">Sinopse</button>
+        <a href="" class="adicionar" style="text-decoration: none;">
+            Adicionar
+            <img src="./img/clarity_shopping-cart-solid.png"/>
+        </a>
+    </div>
+    <div id="quadradao3">
+        <img src="./img/battlefield_1.png" alt="" class="imagens">
+        <p id="titulo">Jogo Battlefield 1</p>
+        <p id="preco">R$ 150.00</p>
+        <button class="sinopse">Sinopse</button>
+        <a href="" class="adicionar" style="text-decoration: none;">
+            Adicionar
+            <img src="./img/clarity_shopping-cart-solid.png"/>
+        </a>
+    </div>
+    <div id="quadradao4">
+        <img src="" alt="">
+        <p id="titulo">Jogo Battlefield 1</p>
+        <p id="preco">R$ 150.00</p>
+        <button class="sinopse">Sinopse</button>
+        <a href="" class="adicionar" style="text-decoration: none;">
+            Adicionar
+            <img src="./img/clarity_shopping-cart-solid.png"/>
+        </a>
+    </div>
+    <div id="quadradao5">
+        <img src="" alt="">
+        <p id="titulo">Jogo Battlefield 1</p>
+        <p id="preco">R$ 150.00</p>
+        <button class="sinopse">Sinopse</button>
+        <a href="" class="adicionar" style="text-decoration: none;">
+            Adicionar
+            <img src="./img/clarity_shopping-cart-solid.png"/>
+        </a>
+    </div>
+
+
+    <footer>
+        <button>
+            baslkdfdsajfkldsjfdf
+        </button>
+    </footer>
+
 </body>
 </html>

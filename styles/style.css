@@ -203,10 +203,88 @@ div#procura > button:focus{
     
 }
 
-main{
 
-}
 div#quadradao1{
     position: absolute;
-    top: 400px;
+    top: 750px;
+    border: 5px solid #66b5cf;
+    width: 200px;
+    height: 299px;
+    left: 10%;
+}
+div#quadradao2{
+    position: absolute;
+    top: 750px;
+    border: 5px solid #66b5cf;
+    width: 200px;
+    height: 299px;
+    left: 28%;
+}
+div#quadradao3{
+    position: absolute;
+    top: 750px;
+    border: 5px solid #66b5cf;
+    width: 200px;
+    height: 299px;
+    left: 46%;
+}
+div#quadradao4{
+    position: absolute;
+    top: 750px;
+    border: 5px solid #66b5cf;
+    width: 200px;
+    height: 299px;
+    left: 64%;
+}
+div#quadradao5{
+    position: absolute;
+    top: 750px;
+    border: 5px solid #66b5cf;
+    width: 200px;
+    height: 299px;
+    left: 82%;
+}
+img.imagens{
+    width: 65%;
+    height: 50%;
+    margin-left: 29px;
+    margin-top: 18px;
+}
+p#titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+p#preco{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+button.sinopse{
+    background-color: white;
+    color: black;
+    border: 1px solid #66b5cf;
+    padding: 7px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+a.adicionar{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    background-color: #66b5cf;
+    color: white;
+    padding: 6px;
+    margin-top: 15px;
+    margin-left: 6px;
+
+
+}
+
+
+footer{
+    position: absolute;
+    top: 1100px;
+    left: 45%;
+    
 }

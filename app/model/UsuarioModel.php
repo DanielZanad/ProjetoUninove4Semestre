@@ -37,7 +37,7 @@ class UsuarioModel{
    
     }
 
-    public function read($id): array{
+    public function login($id): array{
         return [];
     }
 }
