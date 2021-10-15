@@ -31,8 +31,8 @@
         <button class="btn">Super ofertas
     </div>
 
-    <div>
-
+    <div id="quadradao1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum alias quos sed veritatis, beatae natus doloribus. Optio inventore id, incidunt dicta at asperiores omnis hic laborum facilis, cum ipsum similique.</p>
     </div>
 </body>
 </html>
