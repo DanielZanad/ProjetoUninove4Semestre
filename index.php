@@ -7,6 +7,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <style>
+        div#quadradao1{
+        position: absolute;
+        top: 750px;
+        border: 5px solid #66b5cf;
+        width: 200px;
+        height: 299px;
+        left: 7%;
+    }
+    div#quadradao2{
+        position: absolute;
+        top: 750px;
+        border: 5px solid #66b5cf;
+        width: 200px;
+        height: 299px;
+        left: 25%;
+    }
+    div#quadradao3{
+        position: absolute;
+        top: 750px;
+        border: 5px solid #66b5cf;
+        width: 200px;
+        height: 299px;
+        left: 43%;
+    }
+    div#quadradao4{
+        position: absolute;
+        top: 750px;
+        border: 5px solid #66b5cf;
+        width: 200px;
+        height: 299px;
+        left: 61%;
+    }
+    div#quadradao5{
+        position: absolute;
+        top: 750px;
+        border: 5px solid #66b5cf;
+        width: 200px;
+        height: 299px;
+        left: 79%;
+    }
+    img.imagens{
+        width: 65%;
+        height: 50%;
+        margin-left: 29px;
+        margin-top: 18px;
+    }
+    p#titulo{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 10px;
+        margin-top: 8px;
+        font-weight: bold;
+    }
+    p#preco{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 10px;
+        margin-top: 8px;
+    }
+    button.sinopse{
+        background-color: white;
+        color: black;
+        border: 1px solid #66b5cf;
+        padding: 7px;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    a.adicionar{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.1em;
+        background-color: #66b5cf;
+        color: white;
+        padding: 6px;
+        margin-top: 9px;
+        margin-left: 6px;
+    }
+
+    footer{
+        position: absolute;
+        top: 1100px;
+        left: 45%;
+    }
+
+    </style>
     <title>Página Inicial</title>
 </head>
 <body>

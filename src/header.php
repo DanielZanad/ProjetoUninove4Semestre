@@ -1,5 +1,4 @@
 <?php  ?>
-<link rel="stylesheet" href="./styles/style.css">
 <header class="menu-principal">
         <img src="./img/WebLivrariaLogo_1.png" id="logo"/>
         <div id="search-box">
