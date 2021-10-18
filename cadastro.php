@@ -7,26 +7,46 @@ if(isset($_POST['cadastro'])){
     require_once './app/model/UsuarioModel.php';
 
     $usuario = new \app\model\Usuario();
+    $erros = array();
 
-    $usuario->setNome($_POST['nome']);
-    $usuario->setEmail($_POST['email']);
+    $nome = filter_input(INPUT_POST, 'nome',FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+
+    $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+    if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+        $erros[] = "Email invalido";
+        echo "Email invalido";
+    }
+    
+    if ($_POST["senha"] != $_POST["confSenha"]){
+        $erros[] = "As Senhas estão diferentes";
+        echo "As Senhas estão diferentes";
+    }
+    $usuario->setNome($nome);
+    $usuario->setEmail($email);
     $usuario->setSenha($_POST['senha']);
     $usuario->setCel($_POST['celular']);
     $usuario->setGenero($_POST['genero']);
     $usuario->setDataNas($_POST['dataNas']);
 
-    $usuarioDao = new \app\model\UsuarioModel();
-
-    $result = $usuarioDao->create($usuario);
-    $result = json_decode($result);
-    print_r($result);
-    if ($result->status == "true"){
-        echo "<script>alert('Cadastrado com Sucesso!')</script>;";
-        
-    }else{
-        echo "<script>alert('Erro ao Cadastrar, tente novamente!')</script>;"; 
+    if(empty($usuario->getNome()) or empty($usuario->getEmail()) or empty($usuario->getSenha()) or empty($usuario->getCel()) or empty($usuario->getGenero()) or empty($usuario->getDataNas())){
+        $erros[] = "Algum campo esta vazio";
+        echo "Algum campo esta vazio";
     }
-    
+    echo empty($erros);
+    if(empty($erros)){
+        $usuarioDao = new \app\model\UsuarioModel();
+
+        $result = $usuarioDao->create($usuario);
+        if ($result["status"] == 200){
+            echo "<script>alert('Cadastrado com Sucesso!')</script>;";
+            session_start();
+            header("Location: https://web-livraria.herokuapp.com/login.php");    
+        }else{
+            echo "<script>alert('Erro ao Cadastrar, tente novamente!')</script>;"; 
+        }
+    }else{
+        print_r($erros);
+    }
 }
 
 
@@ -36,7 +56,7 @@ if(isset($_POST['cadastro'])){
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,10 +66,10 @@ if(isset($_POST['cadastro'])){
 <body>
     <!--Criando formulario só para testes-->
     <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
-        nome: <input type="text" id="nome" name="nome">
-        Email: <input type="email" id="email" name="email">
-        Celular: <input type="text" id="celular" name="celular">
-        Data de nascimento: <input type="date" id="dataNas" name="dataNas">
+        <input type="text" id="nome" name="nome" placeholder="Nome">
+        <input type="email" id="email" name="email" placeholder="Email">
+        <input type="text" id="celular" name="celular" placeholder="Celular">
+        Data de Nascimento<input type="date" id="dataNas" name="dataNas" placeholder="">
         <label for="genero">Genero:</label>
         <select name="genero" id="genero" autofocus>
             <option value="Masculino">
@@ -62,8 +82,8 @@ if(isset($_POST['cadastro'])){
                 Outros
             </option>
         </select>
-        Senha: <input type="password" id="senha" name="senha">
-        Confirmar senha: <input type="password">
+        <input type="password" id="senha" name="senha" placeholder="Senha">
+        <input type="password" placeholder="Confirmar senha" name="confSenha">
         <button type="submit" name="cadastro">Cadastre-se</button>
     </form>
 </body>

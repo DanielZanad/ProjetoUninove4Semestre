@@ -30,16 +30,52 @@ class UsuarioModel{
             $stmt->bindValue(6, $usuario->getGenero());
 
             $stmt->execute();
-            return json_encode(["status"=>"true", "sucesso"=>"Cadastro realizado com sucesso"]);
+            return ["status"=>200, "msg"=>"Cadastro realizado com sucesso"];
         }else{
-            return json_encode(["status"=>"false","erro"=>"EMAIl ja existe no banco de dados"]);
-        } 
+            return ["status"=>400, "msg"=>"EMAIl ja existe no banco de dados"];
+        }
    
     }
 
-    public function login($id): array{
-        return [];
+    public function searchEmail($email){
+        $sql = "SELECT * FROM usuario WHERE email = '$email'";
+        $stmt = Conexao::getConn()->prepare($sql);
+        $stmt->execute();
+        if($stmt->rowCount()>0){
+            $result = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+            return ["status"=>200,"msg"=>"email encontrado com sucesso", "conteudo"=>$result];
+        }else{// Se nao encontrar nenhum dado no banco
+            return ["status"=>400,"msg"=>"Usuario inexistente"];
+        }
+        
     }
+
+    public function read(){
+        $sql = 'SELECT * FROM usuario';
+        $stmt = Conexao::getConn()->prepare($sql);
+        $stmt->execute();
+        if($stmt->rowCount()>0){
+            // Criando um array com todos os registros
+            $result = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+            return $result;
+        }else{// Se nao encontrar nenhum dado no banco
+            return [];
+        }
+    }
+
+
+    public function login($email,$senha){
+        //$senha = md5($senha);
+        $sql = "SELECT email FROM usuario WHERE email = '$email' and senha = '$senha'";
+        $stmt = Conexao::getConn()->prepare($sql);
+        $stmt->execute();
+        if($stmt->rowCount()>0){
+            return ["status"=>200, "msg"=>"Logado com sucesso"];
+        }else{// Se nao encontrar nenhum dado no banco
+            return ["status"=>400, "msg"=>"Senha Incorreta"];
+        }
+    }
+
 }
 
 ?>

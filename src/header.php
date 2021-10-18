@@ -1,4 +1,4 @@
-<?php  ?>
+<?php session_start(); ?>
 <header class="menu-principal">
         <img src="./img/WebLivrariaLogo_1.png" id="logo"/>
         <div id="search-box">
@@ -11,12 +11,18 @@
             </select>
             <input type="search" placeholder="" id="search-box">
         </div>
-        <p>Olá, Seja Bem vindo!</p>
+        <p>Olá, <?php if(isset($_SESSION["nome"])){echo $_SESSION["nome"];}else{echo "Bem vindo!";}?></p>
         <div id="login">
-            <img src="./img/carbon_user-filled.png" />
-            <a href="">Entre</a>
-            <p>Ou</p>
-            <a href="../cadastro.php">Cadastre-se</a>
+            <?php if(isset($_SESSION["nome"])){?>
+                <img src="./img/carbon_user-filled.png" />
+                <p>Boas Compras!</p>
+                <a href="../logout.php">Sair?</a>
+            <?php }else{ ?>
+                <img src="./img/carbon_user-filled.png" />
+                <a href="../login.php">Entre</a>
+                <p>Ou</p>
+                <a href="../cadastro.php">Cadastre-se</a>
+            <?php } ?>    
         </div>
         <a href="">
             <img src="./img/clarity_shopping-cart-solid.png" id="carrinho" />
