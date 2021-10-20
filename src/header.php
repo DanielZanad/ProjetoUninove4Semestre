@@ -1,4 +1,9 @@
-<?php session_start(); ?>
+<?php 
+if (isset($_SESSION["nome"])) {
+    session_start();
+}
+session_start();
+?>
 <header class="menu-principal">
         <img src="./img/WebLivrariaLogo_1.png" id="logo"/>
         <div id="search-box">

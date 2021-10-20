@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
@@ -136,18 +137,8 @@ img#anuncioimagem{
    right: 30px;
    height: 90%;
 }
-div#anuncio > h2{
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    display: inline;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 2em;
-    line-height: 47px;
-    position: absolute;
-    left: 100px;
-}
+
+
 div#anuncio{
     border-radius: 25px;
     background-color: #C0CCDA;

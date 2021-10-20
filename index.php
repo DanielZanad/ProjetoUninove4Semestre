@@ -9,6 +9,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <style>
+
+
+div#anuncio > h2{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: inline;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 47px;
+    position: absolute;
+    left: 100px;
+    top: 75px;
+ 
+}
+
         div#quadradao1{
         position: absolute;
         top: 750px;
@@ -52,7 +69,7 @@
     img.imagens{
         width: 65%;
         height: 50%;
-        margin-left: 29px;
+        margin-left: 36px;
         margin-top: 18px;
     }
     p#titulo{
@@ -86,8 +103,22 @@
 
     footer{
         position: absolute;
-        top: 1100px;
-        left: 45%;
+        top: 1080px;
+        left: 39.8%;
+        padding: 25px;
+
+        
+    }
+    #botaoFooter{
+        background-color: white;
+        border: 2px solid #66b5cf;
+        color: black;
+        width: 290px;
+        height: 47px;
+        font-size: 1.1em;
+        font-weight: bold;
+        cursor: pointer;
+
     }
 
     </style>
@@ -108,7 +139,7 @@
             Livros e mais livros
         </h2>
         <p>
-            Aqui você encontra as melhores opções em Livros, Games, Filmes, Músicas e Eletrônicos além de eventos gratuitos e as melhores ofertas. Confira!
+            Aqui você encontra as melhores opções em Livros, Games, Filmes além de eventos gratuitos e as melhores ofertas. Confira!
         </p>
         <button type="button">Mais vendidos</button>
         <button class="btn">Destaques</button>
@@ -128,7 +159,7 @@
     <div id="quadradao2">
         <img src="./img/resident_evil_2.png" alt="" class="imagens">
         <p id="titulo">Jogo Resident Evil 2</p>
-        <p id="preco">R$ 200.00</p>
+        <p id="preco">R$ 200,00</p>
         <button class="sinopse">Sinopse</button>
         <a href="" class="adicionar" style="text-decoration: none;">
             Adicionar
@@ -138,7 +169,7 @@
     <div id="quadradao3">
         <img src="./img/battlefield_1.png" alt="" class="imagens">
         <p id="titulo">Jogo Battlefield 1</p>
-        <p id="preco">R$ 150.00</p>
+        <p id="preco">R$ 150,00</p>
         <button class="sinopse">Sinopse</button>
         <a href="" class="adicionar" style="text-decoration: none;">
             Adicionar
@@ -146,9 +177,9 @@
         </a>
     </div>
     <div id="quadradao4">
-        <img src="" alt="">
-        <p id="titulo">Jogo Battlefield 1</p>
-        <p id="preco">R$ 150.00</p>
+        <img src="./img/narutin.png" alt="" class="imagens">
+        <p id="titulo">Mangá Naruto Vol.2 </p>
+        <p id="preco">R$ 30,00</p>
         <button class="sinopse">Sinopse</button>
         <a href="" class="adicionar" style="text-decoration: none;">
             Adicionar
@@ -156,9 +187,9 @@
         </a>
     </div>
     <div id="quadradao5">
-        <img src="" alt="">
-        <p id="titulo">Jogo Battlefield 1</p>
-        <p id="preco">R$ 150.00</p>
+        <img src="./img/submundo.png" alt="" class="imagens">
+        <p id="titulo">Livro Resident Evil - Submundo</p>
+        <p id="preco">R$ 150,00</p>
         <button class="sinopse">Sinopse</button>
         <a href="" class="adicionar" style="text-decoration: none;">
             Adicionar
@@ -168,8 +199,8 @@
 
 
     <footer>
-        <button>
-            baslkdfdsajfkldsjfdf
+        <button id="botaoFooter">
+            Veja tudo em mais vendidos
         </button>
     </footer>
 
