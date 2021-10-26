@@ -67,7 +67,9 @@ if (isset($_POST['cadastro'])) {
 </head>
 
 <header id="headerCadastro">
-    <img src="./img/WebLivrariaLogo_1.png" id="logo" />
+    <a href="/index.php">
+        <img src="./img/WebLivrariaLogo_1.png" id="logo"/>
+    </a>
 </header>
 
 <body>

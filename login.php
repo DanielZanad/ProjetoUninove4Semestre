@@ -56,10 +56,10 @@ if(isset($_POST['btnEntrar'])){
 
 
 <header id="headerCadastro">
-    <img src="./img/WebLivrariaLogo_1.png" id="logo" />
+    <a href="/index.php">
+        <img src="./img/WebLivrariaLogo_1.png" id="logo" />
+    </a>
 </header>
-
-
 <body>
     <h1>
         <?php
