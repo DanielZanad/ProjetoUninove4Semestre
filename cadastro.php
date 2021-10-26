@@ -62,7 +62,7 @@ if (isset($_POST['cadastro'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/styles/stylesCadastro.css">
+    <link rel="stylesheet" type="text/css" href="./styles/stylesCadastro.css">
     <title>Tela de cadastro</title>
 </head>
 
@@ -77,6 +77,8 @@ if (isset($_POST['cadastro'])) {
             Criar Conta
         </h1>
         <hr style="width: 70%; margin-bottom: 30px;">
+        
+        <p>Data de Nascimento<p>
 
         <!--Criando formulario só para testes-->
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" id="formCadastro">
@@ -84,7 +86,7 @@ if (isset($_POST['cadastro'])) {
             <input type="text" id="email" name="email" placeholder="E-mail">
             <input type="password" id="senha" name="senha" placeholder="Senha">
             <input type="password" id="confSenha" placeholder="Confirmar Senha" name="Confirmar Senha">
-            Data de Nascimento<input type="date" id="dataNas" name="dataNas" placeholder="">
+            <input type="date" id="dataNas" name="dataNas" placeholder="">
             <select name="genero" id="genero" autofocus>
                 <option value="Gênero" disabled selected> Gênero
                 </option>
@@ -97,9 +99,15 @@ if (isset($_POST['cadastro'])) {
                 <option value="Outros">
                     Outros
                 </option>
+                <option value="Prefiro não comentar">
+                    Prefiro não comentar
+                </option>
+                <option value="Casimiro">
+                    Casimiro
+                </option>
             </select>
             <input type="text" id="celular" name="celular" placeholder="Celular">
-            <button type="submit" name="cadastro">Cadastre-se</button>
+            <button type="submit" id="cadastrar" name="cadastro">Cadastre-se</button>
         </form>
     </div>
 
@@ -111,3 +119,139 @@ if (isset($_POST['cadastro'])) {
 
 </html>
 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+
+* {
+    margin: auto;
+    padding: 0%;
+}
+
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 17%;
+}
+
+#headerCadastro {
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.219);
+
+}
+
+div#cadastro {
+    margin-top: 42px;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    width: 1650px;
+    height: 750px;
+    font-family: Montserrat;
+
+}
+
+#formCadastro {
+
+    font-size: 1.5em;
+
+
+}
+
+input#nome {
+    position: absolute;
+    width: 437px;
+    left: 12%;
+}
+
+input#email {
+    position: absolute;
+    top: 38%;
+    width: 437px;
+    left: 12%;
+
+}
+
+input#senha {
+    position: absolute;
+    top: 46%;
+    width: 437px;
+    left: 12%;
+}
+
+input#celular{
+    width: 276px;
+    height: 62px;
+    position: absolute;
+    left: 50%;
+    width: 276px;
+}
+
+select#genero {
+    
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    width: 276px;
+    height: 62px;
+    height: 70px;
+    font-family: Montserrat;
+    
+}
+
+input#confSenha {
+   width: 437px;
+   height: 63px;
+   position: absolute;
+   top: 46%;
+   left: 50%;
+   width: 500px;
+}
+
+input#dataNas{
+
+   position: absolute;
+   left: 69%;
+   width: 175px;
+   font-family: Montserrat;
+}
+
+p{
+    top: 25%;
+    position: absolute;
+    left: 70%;
+}
+
+button#cadastrar{
+    width: 604px;
+    height: 76px;
+    position: fixed;
+    top: 70%;
+    right: 33%;
+    border-radius: 10px;   
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Montserrat;
+    background-color: rgba(122, 211, 240, 1);
+}
+
+body {
+
+    background: #CCE9F3;
+}
+
+
+input {
+    width: 100px;
+    padding: 0 20px;
+
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 20px;
+    line-height: 3;
+}
