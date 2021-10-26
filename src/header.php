@@ -24,9 +24,9 @@ session_start();
                 <a href="../logout.php">Sair?</a>
             <?php }else{ ?>
                 <img src="./img/carbon_user-filled.png" />
-                <a href="../login.php">Entre</a>
+                <a href="login.php">Entre</a>
                 <p>Ou</p>
-                <a href="../cadastro.php">Cadastre-se</a>
+                <a href="cadastro.php">Cadastre-se</a>
             <?php } ?>    
         </div>
         <a href="">
