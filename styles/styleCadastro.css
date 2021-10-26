@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+
+* {
+    margin: auto;
+    padding: 0%;
+}
+
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 17%;
+}
+
+#headerCadastro {
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.219);
+
+}
+
+div#cadastro {
+    margin-top: 42px;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    width: 1000px;
+    height: 600px;
+    font-family: Montserrat;
+
+}
+
+#formCadastro {
+
+    font-size: 1.5em;
+
+
+}
+div#linha1{
+    margin-left: 25px;
+    padding: 20px;
+    width: 1100px;
+    text-align: justify;
+}
+div#linha2{
+    margin-left: 25px;
+    padding: 20px;
+    width: 1100px;
+    text-align: justify;
+}
+div#linha3{
+    margin-left: 25px;
+    padding: 20px;
+    width: 1100px;
+    text-align: justify;
+}
+
+
+
+form input[id=nome],
+form input[id=email],
+form input[id=senha],
+form input[id=confSenha]{
+    margin-left: 30px;
+    width: 25%;
+    height: 50px;
+    font-family: Montserrat;
+    border: 1px solid #cccc;
+}
+
+form input[id=celular]{
+    border: 1px solid #cccc;
+    width: 180px;
+    height: 50px;
+    margin-left: 30px;
+    font-family: Montserrat;
+}
+form input[id=dataNas]{
+    border: 1px solid #cccc;
+    width: 185px;
+    height: 50px;
+    margin-left: 30px;
+    font-family: Montserrat;
+    padding-top: 1px;
+
+
+}
+form select{
+    border: 1px solid #cccc;
+    width: 225px;
+    height: 55px;
+    margin-left: 30px;
+    font-family: Montserrat;
+    padding-top: 2px;
+    font-size: 20px;
+    line-height: 3;
+}
+
+
+button#cadastrar{
+    width: 500px;
+    height: 76px;
+    margin-top: 35px;
+    border-radius: 10px;   
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Montserrat;
+    border: 1px solid #CCE9F3;
+    background-color: rgba(122, 211, 240, 1);
+    cursor: pointer;
+}
+
+body {
+
+    background: #CCE9F3;
+}
+
+
+input {
+    width: 100px;
+    padding: 0 20px;
+
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 20px;
+    font-family: Montserrat;
+    line-height: 3;
+}

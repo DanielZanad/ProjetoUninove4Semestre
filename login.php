@@ -50,8 +50,16 @@ if(isset($_POST['btnEntrar'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href=".\styles\styleLogin.css">
     <title>Entrar</title>
 </head>
+
+
+<header id="headerCadastro">
+    <img src="./img/WebLivrariaLogo_1.png" id="logo" />
+</header>
+
+
 <body>
     <h1>
         <?php
@@ -62,10 +70,19 @@ if(isset($_POST['btnEntrar'])){
             }
         ?>  
     </h1>
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-        <input type="email" placeholder="email" id="email" name="email">
-        <input type="password" placeholder="Senha" id="senha" name="senha">
-        <button id="btnEntrar" name="btnEntrar">Entrar</button>
-    </form>
+    <div id="login">
+        <h1 style="padding: 20px;">
+            Login
+        </h1>
+        <hr style="width: 70%; margin-bottom: 30px;">
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" id="formulario">
+            <input type="email" placeholder="email" id="email" name="email">
+            <br>
+            <input type="password" placeholder="Senha" id="senha" name="senha">
+            <br>
+            <button id="btnEntrar" name="btnEntrar">Entrar</button>
+        </form>
+    </div>
+    
 </body>
 </html>
