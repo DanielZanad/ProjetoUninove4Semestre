@@ -37,4 +37,16 @@ function livro(){
     preco5.innerText = "R$ 30,00";
 } 
 
+function jogos(){
+
+}
+
+function brinquedos(){
+
+}
+
+function filmesESeries(){
+    
+}
+
 

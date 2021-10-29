@@ -8,9 +8,9 @@
     </select>
     <div id="links">
         <a href="#" onclick="livro()" >Livros</a>
-        <a href="#" onclick="teste()">Jogos</a>
-        <a href="#">Brinquedos</a>
-        <a href="#">Filmes e Series</a>
+        <a href="#" onclick="jogos()">Jogos</a>
+        <a href="#" onclick="brinquedos()">Brinquedos</a>
+        <a href="#" onclick="filmesESeries()">Filmes e Series</a>
     </div>
     
 </nav>
