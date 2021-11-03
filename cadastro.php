@@ -17,7 +17,7 @@ if (isset($_POST['cadastro'])) {
         echo "Email invalido";
     }
 
-    if ($_POST["senha"] != $_POST["confSenha"]) {
+    if ($_POST["senha"] != $_POST["Confirmar_Senha"]) {
         $erros[] = "As Senhas estão diferentes";
         echo "As Senhas estão diferentes";
     }
