@@ -18,7 +18,7 @@
 <body>
     <?php include_once './src/header.php'; ?>
     <?php include_once './src/nav.php'; ?>
-    <div id="anuncio">
+    <div id="anuncio" onclick="superOfertas()" style="cursor:pointer;">
         <h2>
             Livros com até 20% de Desconto
         </h2>
@@ -32,9 +32,9 @@
         <p>
             Aqui você encontra as melhores opções em Livros, Games, Filmes além de eventos gratuitos e as melhores ofertas. Confira!
         </p>
-        <button type="button">Mais vendidos</button>
-        <button class="btn">Destaques</button>
-        <button class="btn">Super ofertas
+        <button class="btn" type="button" onclick="maisVendidos()">Mais vendidos</button>
+        <button class="btn" type="button" onclick="destaques()">Destaques</button>
+        <button class="btn" type="button" onclick="superOfertas()">Super ofertas</button>
     </div>
 
     <div id="quadradao1">
@@ -49,7 +49,7 @@
     </div>
     <div id="quadradao2">
         <img src="./img/resident_evil_2.png" alt="" class="imagens" id="img2">
-        <p id="pImg2" class="titulo">Jogo Resident Evil 2</p>
+        <p id="pImg2" class="titulo">Jogo Resident Evil Remake</p>
         <p id="p2Img2" class="preco">R$ 200,00</p>
         <button class="sinopse">Sinopse</button>
         <a href="" class="adicionar" style="text-decoration: none;">
@@ -90,7 +90,7 @@
 
 
     <footer>
-        <button id="botaoFooter">
+        <button id="botaoFooter" onclick="maisVendidos()">
             Veja tudo em mais vendidos
         </button>
     </footer>
@@ -98,6 +98,124 @@
 </body>
 
 
+<script>
+
+function maisVendidos(){
+    let titulo = document.getElementById("pImg1");
+    let preco = document.getElementById("p2Img1");
+    let img = document.getElementById("img1");
+    img.src = "./img/narutin.png";
+    titulo.innerText = "Mangá Naruto Vol.2";
+    preco.innerText = "R$ 30,00";
+
+    let titulo2 = document.getElementById("pImg2");
+    let preco2 = document.getElementById("p2Img2");
+    let img2 = document.getElementById("img2");
+    img2.src = "./img/actionfigureace.jpg";
+    titulo2.innerHTML = "Action Figure Portgas D. Ace";
+    preco2.innerHTML = "R$ 200,00";
+
+    let titulo3 = document.getElementById("pImg3");
+    let preco3 = document.getElementById("p2Img3");
+    let img3 = document.getElementById("img3");
+    img3.src = "./img/doismundos.jpg";
+    titulo3.innerText = "Livro Dois Mundos Um Herói";
+    preco3.innerText = "R$ 30,00";
+
+    let titulo4 = document.getElementById("pImg4");
+    let preco4 = document.getElementById("p2Img4");
+    let img4 = document.getElementById("img4");
+    img4.src = "./img/the_last_of_us.png";
+    titulo4.innerText = "The Last of Us 2";
+    preco4.innerText = "R$ 200,00";
+
+    let titulo5 = document.getElementById("pImg5");
+    let preco5 = document.getElementById("p2Img5");
+    let img5 = document.getElementById("img5");
+    img5.src = "./img/boneconeymar.jpg";
+    titulo5.innerText = "Boneco Neymar Jr.";
+    preco5.innerText = "R$ 200,00";
+} 
+
+function destaques(){
+
+
+    let titulo = document.getElementById("pImg1");
+    let preco = document.getElementById("p2Img1");
+    let img = document.getElementById("img1");
+    img.src = "./img/the_last_of_us.png";
+    titulo.innerText = "The Last of Us 2";
+    preco.innerText = "R$ 200,00";
+
+    let titulo2 = document.getElementById("pImg2");
+    let preco2 = document.getElementById("p2Img2");
+    let img2 = document.getElementById("img2");
+    img2.src = "./img/actionfigureace.jpg";
+    titulo2.innerHTML = "Action Figure Portgas D. Ace";
+    preco2.innerHTML = "R$ 200,00";
+
+    let titulo3 = document.getElementById("pImg3");
+    let preco3 = document.getElementById("p2Img3");
+    let img3 = document.getElementById("img3");
+    img3.src = "./img/boneconeymar.jpg";
+    titulo3.innerText = "Boneco Neymar Jr.";
+    preco3.innerText = "R$ 200,00";
+
+    let titulo4 = document.getElementById("pImg4");
+    let preco4 = document.getElementById("p2Img4");
+    let img4 = document.getElementById("img4");
+    img4.src = "./img/borderlands3.jpg";
+    titulo4.innerText = "Borderlands 3";
+    preco4.innerText = "R$ 75,00";
+
+    let titulo5 = document.getElementById("pImg5");
+    let preco5 = document.getElementById("p2Img5");
+    let img5 = document.getElementById("img5");
+    img5.src = "./img/coachcarter.png";
+    titulo5.innerText = "Blu-Ray Coach Carter";
+    preco5.innerText = "R$ 140,00";
+} 
+
+function superOfertas(){
+
+    let titulo = document.getElementById("pImg1");
+    let preco = document.getElementById("p2Img1");
+    let img = document.getElementById("img1");
+    img.src = "./img/doismundos.jpg";
+    titulo.innerText = "Livro Dois Mundos Um Herói";
+    preco.innerHTML = "<del>R$ 70,00</del> R$ 50,00";
+
+    let titulo2 = document.getElementById("pImg2");
+    let preco2 = document.getElementById("p2Img2");
+    let img2 = document.getElementById("img2");
+    img2.src = "./img/oinfluenciador.jpg";
+    titulo2.innerHTML = "O Influenciador";
+    preco2.innerHTML = "<del>R$ 70,00</del> R$ 50,00";
+
+    let titulo3 = document.getElementById("pImg3");
+    let preco3 = document.getElementById("p2Img3");
+    let img3 = document.getElementById("img3");
+    img3.src = "./img/1984.jpg";
+    titulo3.innerText = "Livro 1984";
+    preco3.innerHTML = "<del>R$ 70,00</del> R$ 50,00";
+
+    let titulo4 = document.getElementById("pImg4");
+    let preco4 = document.getElementById("p2Img4");
+    let img4 = document.getElementById("img4");
+    img4.src = "./img/umabreve.png";
+    titulo4.innerText = "Uma breve história sobre o tempo";
+    preco4.innerHTML = "<del>R$ 70,00</del> R$ 50,00";
+
+    let titulo5 = document.getElementById("pImg5");
+    let preco5 = document.getElementById("p2Img5");
+    let img5 = document.getElementById("img5");
+    img5.src = "./img/narutin.png";
+    titulo5.innerText = "Mangá Naruto Vol.2";
+    preco5.innerHTML = "<del>R$ 70,00</del> R$ 30,00";
+
+}
+
+</script>
 
 
 </html>
