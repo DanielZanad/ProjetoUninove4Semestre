@@ -37,16 +37,31 @@
         <button class="btn" type="button" onclick="superOfertas()">Super ofertas</button>
     </div>
 
+    <div id="myModal" class="modal">
+
+<div class="sinopses">
+  <span class="close">&times;</span>
+  <p style="font-family:Roboto">Ambientado cinco anos após os eventos de The Last of Us (2013), o jogador assume o papel de duas 
+    protagonistas em um Estados Unidos pós-apocalíptico: Ellie, que busca por vingança após um evento traumático,
+    e Abby, uma soldada que se envolve em um conflito entre uma milícia e um culto.</p>
+</div>
+
+</div>
+
+
     <div id="quadradao1">
         <img src="./img/the_last_of_us.png" alt="" id="img1" class="imagens">
         <p id="pImg1" class="titulo">Jogo The Last of Us 2</p>
         <p id="p2Img1" class="preco">R$ 200.00</p>
-        <button class="sinopse">Sinopse</button>
+        <button class="sinopse" id="sinopse1">Sinopse</button>
         <a href="" class="adicionar" style="text-decoration: none;">
             Adicionar
             <img src="./img/shopping_cart.ico" />
         </a>
     </div>
+
+
+
     <div id="quadradao2">
         <img src="./img/resident_evil_2.png" alt="" class="imagens" id="img2">
         <p id="pImg2" class="titulo">Jogo Resident Evil Remake</p>
@@ -98,7 +113,82 @@
 </body>
 
 
+
+<style>
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.sinopses {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+
+button.sinopse {
+    cursor: pointer;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+</style>
+
 <script>
+
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("sinopse1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
 
 function maisVendidos(){
     let titulo = document.getElementById("pImg1");
