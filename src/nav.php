@@ -1,7 +1,7 @@
 
 <nav>
-    <select name="categoria" id="categoria">
-        <option value="">Categoria</option>
+    <select name="categoria" id="categoria" onclick="audio()">
+        <option value="">Parabens</option>
         <option value="">teste</option>
         <option value="">teste</option>
     </select>
@@ -15,6 +15,11 @@
 </nav>
 
 <script>
+function audio(){
+    var audio = new Audio("../bemtevi.mp3");
+    audio.play();
+}
+
 
 function livro(){
     let titulo = document.getElementById("pImg1");

@@ -19,37 +19,10 @@ img#logo {
     display: inline;
     width: 291px;
     height: 103px;
-    left: 74px;
+    left: 40%;
     top: 9px;
 }
-div#search-box{
-    display: inline;
-    position: absolute;
-    width: 550px;
-    left: 440px;
-    top: 39px;
-    height: 50px;
-    border: 2px solid #7AD3F0;
-    padding-bottom: -10px;
-}
-select#todosite{
-    width: 123px;
-    height: 45px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
-    font-weight: bold;
-    border: 1px solid #ffffff;
-    color: #7AD3F0;
-}
-input#search-box{
-    width: 70%;
-    height: 70%;
-    font-size: 20px;
-    line-height: 1;
-    border: 3px rgba(184, 17, 17, 0); 
-    padding-bottom: 5px;
-    padding-left: 10px;
-}
+
 header > p{
     position: absolute;
     right: 127px;
@@ -120,7 +93,7 @@ select#categoria{
     margin-left: 100px;
     text-decoration: none;
     border: 1px solid #7AD3F0;
-    color: white;
+    color: #7AD3F0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1em;
     font-weight: bold;

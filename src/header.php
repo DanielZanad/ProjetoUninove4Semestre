@@ -5,16 +5,6 @@ if (isset($_SESSION["nome"])) {
 ?>
 <header class="menu-principal">
         <img src="./img/WebLivrariaLogo_1.png" id="logo"/>
-        <div id="search-box">
-            <select name="Todo o site" id="todosite">
-                <option value="">Livros</option>
-                <option value="">Jogos</option>
-                <option value="">Brinquedos</option>
-                <option value="">Filmes</option>
-                <option value="">Series</option>
-            </select>
-            <input type="search" placeholder="" id="search-box">
-        </div>
         <p>Olá, <?php if(isset($_SESSION["nome"])){echo $_SESSION["nome"];}else{echo "Bem vindo!";}?></p>
         <div id="login">
             <?php if(isset($_SESSION["nome"])){?>
