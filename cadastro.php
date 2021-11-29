@@ -14,12 +14,10 @@ if (isset($_POST['cadastro'])) {
     $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $erros[] = "Email invalido";
-        echo "Email invalido";
     }
 
     if ($_POST["senha"] != $_POST["Confirmar_Senha"]) {
         $erros[] = "As Senhas estão diferentes";
-        echo "As Senhas estão diferentes";
     }
     $usuario->setNome($nome);
     $usuario->setEmail($email);
@@ -30,7 +28,6 @@ if (isset($_POST['cadastro'])) {
 
     if (empty($usuario->getNome()) or empty($usuario->getEmail()) or empty($usuario->getSenha()) or empty($usuario->getCel()) or empty($usuario->getGenero()) or empty($usuario->getDataNas())) {
         $erros[] = "Algum campo esta vazio";
-        echo "Algum campo esta vazio";
     }
     echo empty($erros);
     if (empty($erros)) {
@@ -45,7 +42,10 @@ if (isset($_POST['cadastro'])) {
             echo "<script>alert('Erro ao Cadastrar, tente novamente!')</script>;";
         }
     } else {
-        print_r($erros);
+        foreach ($erros as $erro) {
+            echo "<script>alert('$erro, tente novamente!')</script>";
+        }
+        
     }
 }
 

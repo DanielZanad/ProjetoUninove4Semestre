@@ -38,7 +38,7 @@ if(isset($_POST['btnEntrar'])){
                 $erros[] = $result["msg"];
             }
         }else{
-            $erros[] =  $result["msg"];
+            $erros[] =  "Usuario inexistente";
         }
     }
 }
@@ -65,7 +65,7 @@ if(isset($_POST['btnEntrar'])){
         <?php
             if(!empty($erros)){
                 foreach ($erros as $erro) {
-                    echo $erro;
+                    echo "<script>alert('$erro, tente novamente!')</script>";
                 }
             }
         ?>  

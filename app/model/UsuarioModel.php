@@ -24,7 +24,7 @@ class UsuarioModel{
             $stmt = Conexao::getConn()->prepare($sql);
             $stmt->bindValue(1, $usuario->getNome());
             $stmt->bindValue(2, $usuario->getEmail());
-            $stmt->bindValue(3, $usuario->getSenha());
+            $stmt->bindValue(3, md5($usuario->getSenha()));
             $stmt->bindValue(4, $usuario->getCel());
             $stmt->bindValue(5, $usuario->getDataNas());
             $stmt->bindValue(6, $usuario->getGenero());
@@ -65,7 +65,7 @@ class UsuarioModel{
 
 
     public function login($email,$senha){
-        //$senha = md5($senha);
+        $senha = md5($senha);
         $sql = "SELECT email FROM usuario WHERE email = '$email' and senha = '$senha'";
         $stmt = Conexao::getConn()->prepare($sql);
         $stmt->execute();
