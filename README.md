@@ -9,3 +9,11 @@
 | 420114164 |      Lucas Gomes Freire                         |   
 | 420110211 |      Nathaly de Cassia Magalhães                |
 | 420105528	|      William de Castro Torres        	          | 
+
+
+
+Projeto de quarto semestre do grupo, feito a base de 
+HTML, CSS, PHP e algumas funções feitas com JavaScript.
+
+Modelo UX desenvolvido pela aluna Beatriz Pereira Alencar,
+feito algumas alterações do modelo original para o formato final.

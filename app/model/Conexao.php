@@ -10,7 +10,7 @@ class Conexao{
     public static function getConn(){
         if(!isset(self::$instance)){
             // Criando uma instancia nova   
-            self::$instance = new PDO('mysql:host=.amazonaws.com;dbname=usuario;charset=utf8','admin','');
+            self::$instance = new PDO('mysql:host=mysqlserver.cm.us-east-1.rds.amazonaws.com;dbname=usuario;charset=utf8','admin','');
         }
         // Retornando a instancia
         return self::$instance;
