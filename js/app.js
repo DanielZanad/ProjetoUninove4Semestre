@@ -2,6 +2,7 @@ async function buscarSinopse(id) {
     let data = await fetch("sinopse.json")
         .then(response => response.json())
         .then(json => json);
+    console.log(id);
     switch (id) {
         case "1":
             return data[0].sinopse;
